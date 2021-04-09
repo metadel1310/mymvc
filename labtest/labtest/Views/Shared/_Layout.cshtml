@@ -4,7 +4,12 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title -Team of App-Factory web site</title>
+    <!-- CSS only -->
+    <!-- CSS only -->
+
+
     @Styles.Render("~/Content/css")
+
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
@@ -15,16 +20,23 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
+         
                 </button>
-                <img src="C:\Users\students\Desktop\app-factory.jpg" height="100"  width="50"/>
+             
             </div>
             <div class="navbar-collapse collapse">
-               
+                
                 <ul class="nav navbar-nav">
 
+                    <li>
+               
+                        <img src="~/photo/group.png" width="100" height="50" />
+                    </li>
+                    <li>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</li>
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
                     <li>@Html.ActionLink("About", "About", "Home")</li>
                     <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                    <li>@Html.ActionLink("login", "login", "Home")</li>
                 </ul>
             </div>
         </div>
@@ -32,9 +44,25 @@
     <div class="container body-content">
         @RenderBody()
         <hr />
+       
         <footer>
-            <p>&copy; @DateTime.Now.Year - team of  
-            App-Factory</p>
+            
+                <h5>Our Social Networks</h5>
+                <p>use  thi link for  mor information</p>
+                <div class="social-links mt-3">
+                    <u>
+                       <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                    </u>
+                </div>
+        
+           
+            &copy; @DateTime.Now.Year - team of
+            App-Factory
+            </p>
         </footer>
     </div>
 

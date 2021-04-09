@@ -12,17 +12,21 @@ namespace labtest.Controllers
         {
             return View();
         }
+        public ActionResult login()
+        {
 
+            return View();
+        }
         public ActionResult About()
         {
-            ViewBag.Message = "we  are App_factory student and developing  web site if  u  want a website for  your  organaization contact us.";
+            ViewBag.Message = "About AppFactory student  team.";
 
             return View();
         }
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.Message = "contact us by the  following address.";
 
             return View();
         }
