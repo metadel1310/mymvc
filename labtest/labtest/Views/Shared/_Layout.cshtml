@@ -44,30 +44,29 @@
     <div class="container body-content">
         @RenderBody()
         <hr />
-       
+        <div class="jumbotron">
         <footer>
-            
-                <h5>Our Social Networks</h5>
-                <p>use  thi link for  mor information</p>
-                <div class="social-links mt-3">
-                    <u>
-                       <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-                        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-                        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-                        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-                    </u>
-                </div>
-        
-           
-            &copy; @DateTime.Now.Year - team of
-            App-Factory
-            </p>
+
+            <div class="social-links mt-3">
+                <u>
+                    <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                    <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                    <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                    <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                    <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                </u>
+            </div>
+
+
+        &copy; @DateTime.Now.Year - team of
+        App-Factory
+        </p>
         </footer>
+         </div>
     </div>
 
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
-    @RenderSection("scripts", required: false)
+        @Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/bootstrap")
+        @RenderSection("scripts", required: false)
 </body>
 </html>
